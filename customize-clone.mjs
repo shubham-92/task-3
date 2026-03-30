@@ -84,97 +84,75 @@ body {
   width: 100%;
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid rgba(10, 36, 36, 0.12);
-  border-radius: 26px;
+  border-radius: 16px;
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.10);
-  padding: 28px;
+  padding: 20px;  /* Reduced from 28px */
 }
+
 .hero-form__heading {
   color: #111;
-  font-size: 28px;
+  font-size: 22px;  /* Reduced from 28px */
   line-height: 1.15;
   font-weight: 700;
-  margin: 0 0 12px;
+  margin: 0 0 8px;  /* Reduced from 12px */
 }
-.hero-form__heading span {
-  color: #0e5b52;
-  font-style: italic;
-  display: block;
-}
+
 .hero-form__lead {
   color: #303030;
-  font-size: 18px;
+  font-size: 15px;  /* Reduced from 18px */
   line-height: 1.4;
-  margin: 0 0 22px;
+  margin: 0 0 16px;  /* Reduced from 22px */
 }
+
 .hero-form__login {
   color: #202020;
-  font-size: 16px;
-  margin: 0 0 18px;
+  font-size: 14px;  /* Reduced from 16px */
+  margin: 0 0 14px;  /* Reduced from 18px */
 }
-.hero-form__login a,
-.hero-form__terms a {
-  color: #0e5b52;
-  text-decoration: underline;
-}
+
 .hero-form__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 10px;  /* Reduced from 14px */
 }
+
 .hero-form__field,
 .hero-form__split,
 .hero-form__select {
   width: 100%;
-  min-height: 52px;
+  min-height: 40px;  /* Reduced from 52px */
   border: 1.5px solid #273235;
   border-radius: 8px;
   background: #fff;
   color: #1f2933;
-  font-size: 16px;
-  padding: 0 16px;
+  font-size: 14px;  /* Reduced from 16px */
+  padding: 0 12px;  /* Reduced from 16px */
 }
-.hero-form__field::placeholder {
-  color: #31414a;
-}
-.hero-form__field--full,
-.hero-form__select--full {
-  grid-column: 1 / -1;
-}
-.hero-form__phone {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 0;
-}
-.hero-form__phone select {
-  border-right: 0;
-  border-radius: 8px 0 0 8px;
-}
-.hero-form__phone input {
-  border-radius: 0 8px 8px 0;
-}
-.hero-form__actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+
 .hero-form__submit {
   border: 0;
   border-radius: 999px;
   background: #0d6b57;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;  /* Reduced from 18px */
   font-weight: 700;
   letter-spacing: 0.02em;
-  width: min(100%, 420px);
-  min-height: 46px;
+  width: min(100%, 380px);  /* Reduced from 420px */
+  min-height: 42px;  /* Reduced from 46px */
   cursor: pointer;
 }
+
+.hero-form__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;  /* Reduced from 20px */
+}
+
 .hero-form__terms {
   color: #222;
   text-align: center;
-  font-size: 15px;
-  margin: 22px 0 0;
+  font-size: 13px;  /* Reduced from 15px */
+  margin: 14px 0 0;  /* Reduced from 22px */
 }
 .about {
   background: linear-gradient(180deg, #f7fbf7 0%, #eef7ee 100%);
