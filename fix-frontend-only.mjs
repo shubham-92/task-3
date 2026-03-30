@@ -3,8 +3,8 @@ import { readFileSync, writeFileSync } from "node:fs";
 let html = readFileSync("index.html", "utf8");
 
 html = html.replace(
-  /\.clone-topbar\s*\{[\s\S]*?\}/,
-  `.clone-topbar {
+  /\.topbar\s*\{[\s\S]*?\}/,
+  `.topbar {
   position: relative;
   top: auto;
   left: auto;
@@ -17,8 +17,8 @@ html = html.replace(
 );
 
 html = html.replace(
-  /\.clone-topbar__inner\s*\{[\s\S]*?\}/,
-  `.clone-topbar__inner {
+  /\.topbar__inner\s*\{[\s\S]*?\}/,
+  `.topbar__inner {
   max-width: 1280px;
   margin: 0 auto;
   padding: 18px 24px;
@@ -49,11 +49,11 @@ html = html.replace(
   "</body>",
   `<script>
   document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".clone-hero-form form");
+    const form = document.querySelector(".hero-form form");
     if (!form) return;
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      const submitButton = form.querySelector(".clone-hero-form__submit");
+      const submitButton = form.querySelector(".hero-form__submit");
       if (!submitButton) return;
       const originalText = submitButton.textContent;
       submitButton.textContent = "SUBMITTED";
